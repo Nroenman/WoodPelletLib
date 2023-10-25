@@ -15,7 +15,7 @@
             }
             set
             {
-                if (value.Length <= 2)
+                if (value.Length > 2)
                 {
                     _brand = value;
                 

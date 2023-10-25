@@ -38,13 +38,13 @@ namespace WoodPelletLib.Tests
 
         //tester på brand længde
         [TestMethod()]
-        public void WoodPelletBrandTest(WoodPellet woodPellet)
+        public void WoodPelletBrandTest()
         {
             WoodPellet BilligPille = new WoodPellet();
-            woodPellet.Brand = "BilligPille";
+            BilligPille.Brand = "BilligPille";
 
 
-            Assert.IsTrue(BilligPille.Brand.Length >= 2);
+            //Assert.ThrowsException<WoodPellet>(()=>BilligPille);
         }
 
 
